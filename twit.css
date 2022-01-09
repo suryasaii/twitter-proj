@@ -1,0 +1,226 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+.main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    height: max-content;
+}
+.logoimgleft{
+    background-size: cover;
+}
+.logoimgleft img{
+    float: left; 
+    width: 100%;
+    height: 100%;
+   
+}
+@media screen and (max-width: 1000px ) {
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+ }
+.logoimgleft img{
+        width: 100%;
+        padding: 0px;
+        position: relative;
+        top:-100px;
+}
+.login-form{
+    display: flex;
+    position: relative;
+    left: 50px;
+    right:300px;
+    
+}     
+
+
+}
+
+
+.login-form{
+    float: right;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,max-content);
+    height: auto;
+    padding: 120px;
+}
+.login-form i{
+    color: rgb(29, 155, 240);
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.login-form h1{
+    font-family: 'lato', sans-serif;
+    margin-top: 45px;
+    margin-left: 8px;
+    font-size: 65px;
+    word-spacing: 4px;
+   
+}
+.login-form h2{
+    font-family: 'lato', sans-serif;
+    margin-left: 8px;
+    margin-top: -15px;
+    font-size: 30px;
+    word-spacing: 4px;
+}
+.login-form h3{
+    font-family: 'lato', sans-serif;
+    position: relative;
+    bottom: 20px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.signin input{
+
+    width: 250px;
+    height: 38px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'lato', sans-serif;
+    margin-top: 10px;
+    color:  rgb(29, 155, 240);
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: solid rgb(228, 239, 245);
+    border-radius: 40px;
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+    bottom: 50px;
+    cursor: pointer;
+}
+.signin input:hover{
+    background-color: rgb(228, 244, 255);
+    transition-duration: 0.5s
+}
+.footer{
+    float: left;
+    width: 100%;
+    padding-bottom:10px;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px; 
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+.links a{
+    
+    text-decoration: none;
+    color: rgb(83, 100, 113);
+    font-weight: 400;
+    font-size: 13px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    line-height: 16px;
+    padding-right: 16px;
+    padding: 5px;
+    min-width: 0px;
+    position: relative;
+    left: 16px;
+    right: 16px;
+    overflow-wrap: break-word;
+    cursor: pointer;
+}
+.search-box img{
+     width: 15px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 38px;
+    font-weight: 700;
+    font-family: 'lato', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    color:  black;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(83, 100, 113);
+    border-radius: 40px;
+    border-width: 1px;
+    border-style: solid; 
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(230, 230, 230);
+    transition-duration: 0.5s
+}
+
+.btn a{
+    position: relative;
+    top: 7px;
+}
+.apple{
+    position: relative;
+    right: 15px;
+}
+.btn img{
+    
+    position: relative;
+    top:15%;
+    padding: 5px;
+}
+.btn i{
+    position: relative;
+   bottom: 50%;
+    padding: 5px;
+    right: 20px;
+    color: black;
+}
+.signup input{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 38px;
+    font-weight: 700;
+    font-family: 'lato', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    color:  white;
+    font-weight: 600;
+    background-color: rgb(29, 155, 240);
+    border-style: none;
+    border-radius: 40px;
+    border-width: 1px; 
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+}
+.signup input:hover{
+    background-color: rgb(80, 175, 238);
+    transition-duration: 0.5s
+}
+.terms{
+   font-size: 11px;
+   line-height: 12px;
+   color: rgb(83, 100, 113);
+   margin-bottom: 20px;
+   max-width: 380px;
+   font-weight: 400;
+   width: 300px;
+}
+.terms a{
+    text-decoration: none;
+    color:rgb(80, 175, 238) ;
+}
+.login-form{
+ position: relative;
+ left: -100px;
+ bottom: 100px;
+ top: 20px
+}
